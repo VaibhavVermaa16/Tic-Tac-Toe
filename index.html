@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <title>TicTacToe</title>
+</head>
+
+<body class="d-flex vw-100 vh-100 align-items-center justify-content-center">
+
+    <header class="heading container-fluid">Tic Tac Toe</header>
+
+    <div class="score d-flex row" style="border: 2px dotted white; border-radius:10px; margin-bottom: 5px">
+        <div class="p1 col"><b>Player 1</b>: O</div>
+        <div class="p2 col"><b>Player 2</b>: X</div>
+        <h2 style="text-align: center" class="hide" id="winner" >Winner</h2>
+    </div>
+
+    <div class="container">
+        <div class="display row">
+            <button class="box b1" onclick="play('b1')"><h1 class="b" id="b1"></h1></button>
+            <button class="box b2" onclick="play('b2')"><h1 class="b" id="b2"></h1></button>
+            <button class="box b3" onclick="play('b3')"><h1 class="b" id="b3"></h1></button>
+            <button class="box b4" onclick="play('b4')"><h1 class="b" id="b4"></h1></button>
+            <button class="box b5" onclick="play('b5')"><h1 class="b" id="b5"></h1></button>
+            <button class="box b6" onclick="play('b6')"><h1 class="b" id="b6"></h1></button>
+            <button class="box b7" onclick="play('b7')"><h1 class="b" id="b7"></h1></button>
+            <button class="box b8" onclick="play('b8')"><h1 class="b" id="b8"></h1></button>
+            <button class="box b9" onclick="play('b9')"><h1 class="b" id="b9"></h1></button>
+        </div>
+    </div>
+
+    <div class="">
+        <button type="button" class="btn button" onclick="reset()">Reset</button>
+    </div>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
